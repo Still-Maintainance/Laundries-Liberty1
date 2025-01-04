@@ -3,6 +3,11 @@
 <html lang="en">
 
 <head>
+
+    <!-- Ramabadra font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -94,15 +99,14 @@
         <div class="banner-layer">
             <video autoplay muted loop id="myVideo">
                 <source src="assets/videos/video1.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
             </video>
             <div class="main-content-top">
                 <div class="container">
                     <div class="main-content">
-                        <p style="font-size: 60px; font-weight: bolder;">మన భీమవరం</p>
+                        <p style="font-size: 70px; font-family: Ramabhadra; letter-spacing: 3px;">మన భీమవరం</p>
                         <p style="font-size: 30px; font-weight: bolder; margin-top: 35px; margin-bottom: 20px;">Smart Wash <br> Laundry & Dry Cleaning Services</p>
                         <p >Smart Wash is a student-run laundry service offering efficient, affordable, and eco-friendly solutions. We focus on delivering high-quality laundry care, saving time and effort.</p>
-                        <a href="see.html" class="btn btn-style mt-md-5 mt-4">Schedule Pickup Now</a>
+                        <a href="see.html" class="btn btn-style mt-md-5 mt-4">Schedule Pickup Now <img style="width: 55px; border-radius: 35px;" src="assets/images/1.png" alt="delivery image"> </a>  
                     </div>
                 </div>
             </div>  
@@ -349,7 +353,7 @@
     <!-- works section -->
     <section class="w3l-feature-8 px-0">
         <div class="container text-center" id="inpage">
-            <p class="tit">This is how we work</p>
+            <p class="tit" style="padding-top: 35px; font-size: 35px;">This is how we work</p>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4"> <!-- Adjusted column classes for responsiveness -->
                 <div class="col">
                     <div class="card h-100 rounded-4">
@@ -389,6 +393,8 @@
                 </div>
             </div>
         </div>
+
+        <img src="assets/images/cycle.jpg" alt="cycle" style="padding: 45px; align-items: center; width: 100%; border-radius: 25px; border-radius: 55px;">
     
         <!-- Additional CSS for responsiveness -->
         <style>
@@ -396,22 +402,26 @@
                 transition: transform 0.3s ease, box-shadow 0.3s ease;
                 border-radius: 35px;
                 padding: 0px;
-                box-shadow: 5px 25px 38px rgba(0, 0, 0, 0.2);
+                border: black;
+                box-shadow: 7px 10px 20px rgba(0, 0, 0, 0.2); /* Spread the shadow more evenly */
+                width: 100%; /* Increase the width of the card */
+                max-width: 400px; /* Set a maximum width for the card */
+                margin: auto; /* Center the card */
             }
-    
+        
             .card-body {
                 border-radius: 0 0 15px 15px;
-                box-shadow: 0 25px 98px rgba(0, 0, 1, 0.3);
+                box-shadow: 0 10px 20px rgba(0, 0, 1, 0.3); /* Spread the shadow more evenly */
             }
-    
+        
             .rounded-4 {
                 border-radius: 35px;
             }
-    
+        
             .card-img-top {
                 border-radius: 35px 35px 0 0;
             }
-    
+        
             .tit {
                 font-size: x-large;
                 font-weight: bolder;
@@ -421,23 +431,23 @@
                 letter-spacing: 2px;
                 word-spacing: 5px;
             }
-    
+        
             @media (max-width: 768px) {
                 .card {
                     margin-bottom: 15px;
                 }
-    
+        
                 .tit {
                     font-size: large;
                 }
             }
-    
+        
             @media (max-width: 576px) {
                 .tit {
                     font-size: medium;
                 }
             }
-        </style>
+        </style>    
     </section>
     <!-- //works section -->
 <br>

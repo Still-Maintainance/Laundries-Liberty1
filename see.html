@@ -8,6 +8,10 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="assets/css/style-liberty.css">
     <style>
+        .body{
+            width: 500px;
+        }
+
         .custom-btn {
             background-color: white;
             color: #2563eb;
@@ -62,23 +66,23 @@
             gap: 1rem;
         }
         /* Style for the active button */
-.service-button.active {
-    background-color: #2563eb;
-    color: white;
-}
-.service-button {
-    padding: 10px 20px;
-    border: 2px solid #2563eb;
-    border-radius: 5px;
-    cursor: pointer;
-}
+       .service-button.active {
+         background-color: #2563eb;
+         color: white;
+       }
+       .service-button {
+       padding: 10px 20px;
+      border: 2px solid #2563eb;
+       border-radius: 5px;
+      cursor: pointer;
+     }
 
-.service-button:hover {
-    background-color: lightblue;
-    color: #2563eb;
-}
+    .service-button:hover {
+     background-color: lightblue;
+     color: #2563eb;
+    }
 
-.modal {
+     .modal {
         display: none;
         position: fixed;
         top: 0;
@@ -88,8 +92,8 @@
         background-color: rgba(0, 0, 0, 0.5);
         justify-content: center;
         align-items: center;
-    }
-    .popup-content {
+     }
+     .popup-content {
         background-color: white;
         border-radius: 10px;
         padding: 20px;
@@ -124,7 +128,7 @@
         word-wrap: break-word; /* Ensure long words break into the next line */
     }
 
-    </style>
+</style>
 
     
     <script>
@@ -199,30 +203,30 @@
   { id: "h_3", name: "BATHROBE", price: 200, image: "assets/images/62.jpg" },
   { id: "h_4", name: "HANDTOWEL", price: 50, image: "assets/images/63.jpg" },
   { id: "h_5", name: "BATHTOWEL", price: 50, image: "assets/images/64.jpg" },
-  { id: "h_6", name: "CUSHION COVER ORDINARY", price: 50, image: "img/65.png" },
-  { id: "h_7", name: "CUSHION COVER X", price: 100, image: "img/66.png" },
+  { id: "h_6", name: "CUSHION COVER ORDINARY", price: 50, image: "assets/images/65.jpg" },
+  { id: "h_7", name: "CUSHION COVER X", price: 100, image: "assets/images/68.jpg" },
   { id: "h_8", name: "PILLOW COVER-COTTON/TERRY COTTON", price: 50, image: "assets/images/pillowcover.jpg" },
   { id: "h_9", name: "PILLOW COVER-EMBROIDERED", price: 100, image: "assets/images/pillowcover_emb.jpg" },
   { id: "h_10", name: "BLANKET/QUILT COVER SINGLE", price: 200, image: "img/69.png" },
-  { id: "h_11", name: "FACE TOWEL", price: 30, image: "img/70.png" },
+  { id: "h_11", name: "FACE TOWEL", price: 30, image: "assets/images/81.jpg" },
   { id: "h_12", name: "SOFA COVER PER SET", price: 50, image: "assets/images/sofa.jpg" },
   { id: "h_13", name: "TABLE COVER SMALL", price: 50, image: "assets/images/79.jpg" },
   { id: "h_14", name: "TABLE COVER BIG", price: 100, image: "assets/images/78.jpg" },
   { id: "h_15", name: "TABLE RUNNER", price: 80, image: "img/74.png" },
   { id: "h_16", name: "PRAM", price: 300, image: "assets/images/77.jpg" },
   { id: "h_17", name: "SUITECASE / TROLLEY BAG LARGE", price: 300, image: "assets/images/suitcase.jpg" },
-  { id: "h_18", name: "CURTAIN WINDOW WITHOUT LINING 3*5", price: 100, image: "img/77.png" },
-  { id: "h_19", name: "CURTAIN DOOR WITHOUT LINING 3*7", price: 150, image: "img/78.png" },
-  { id: "h_20", name: "CURTAIN DOOR WITH LINING 3*7", price: 150, image: "img/79.png" },
-  { id: "h_21", name: "CURTAIN FALL CEILING WITHOUT LINING 3*9", price: 300, image: "img/80.png" },
-  { id: "h_22", name: "CURTAIN FALL CEILING WITH LINING 3*9", price: 400, image: "img/81.png" },
-  { id: "h_23", name: "CURTAIN STANDARD PANEL WITHOUT LINING", price: 200, image: "img/82.png" },
-  { id: "h_24", name: "CURTAIN STANDARD PANEL WITH LINING", price: 300, image: "img/83.png" },
+  { id: "h_18", name: "CURTAIN WINDOW WITHOUT LINING 3*5", price: 100, image: "assets/images/69.jpg" },
+  { id: "h_19", name: "CURTAIN DOOR WITHOUT LINING 3*7", price: 150, image: "assets/images/73.jpg" },
+  { id: "h_20", name: "CURTAIN DOOR WITH LINING 3*7", price: 150, image: "assets/images/74.jpg" },
+  { id: "h_21", name: "CURTAIN FALL CEILING WITHOUT LINING 3*9", price: 300, image: "assets/images/70.jpg" },
+  { id: "h_22", name: "CURTAIN FALL CEILING WITH LINING 3*9", price: 400, image: "assets/images/75.jpg" },
+  { id: "h_23", name: "CURTAIN STANDARD PANEL WITHOUT LINING", price: 200, image: "assets/images/72.jpg" },
+  { id: "h_24", name: "CURTAIN STANDARD PANEL WITH LINING", price: 300, image: "assets/images/71.jpg" },
   { id: "h_25", name: "BEDSHEET SINGLE", price: 50, image: "img/84.png" },
-  { id: "h_26", name: "BEDSHEET DOUBLE", price: 100, image: "img/85.png" },
-  { id: "h_27", name: "BLANKET SINGLE", price: 200, image: "img/86.png" },
-  { id: "h_28", name: "BLANKET DOUBLE", price: 400, image: "img/87.png" },
-  { id: "h_29", name: "QUILT SINGLE", price: 200, image: "img/60.png" }
+  { id: "h_26", name: "BEDSHEET DOUBLE", price: 100, image: "assets/images/67.jpg" },
+  { id: "h_27", name: "BLANKET SINGLE", price: 200, image: "assets/images/66.jpg" },
+  { id: "h_28", name: "BLANKET DOUBLE", price: 400, image: "assets/images/blanket_double.jpg" },
+  { id: "h_29", name: "QUILT SINGLE", price: 200, image: "assets/images/59.jpg" }
 ]
             },
 
@@ -707,14 +711,14 @@ const phoneInput = document.getElementById('phone');
         }
 
     }
-
-
     </script>
-</head>
+</head> 
 <body class="bg-gray-50">
-   
+    
+
     <main class="max-w-7xl mx-auto p-4">
-        <!-- Service Buttons -->
+      
+        
         <!-- Service buttons to toggle between services -->
 <div class="flex justify-center space-x-4 mb-6">
     <button id="dryCleanButton" onclick="showService('Dry Clean')" class="service-button">Dry Clean</button>
@@ -753,7 +757,7 @@ const phoneInput = document.getElementById('phone');
                         maxlength="10" 
                         required 
                         oninput="validatePhoneNumber()">
-                    <span id="phoneError" style="color: red; display: none;">Invalid phone number format.</span>
+                    <span id="phoneError" style="color: rgb(255, 0, 0); display: none;">Invalid phone number format.</span>
                 </div>
                 
                 
