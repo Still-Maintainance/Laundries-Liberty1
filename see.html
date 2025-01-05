@@ -207,12 +207,12 @@
   { id: "h_7", name: "CUSHION COVER X", price: 100, image: "assets/images/68.jpg" },
   { id: "h_8", name: "PILLOW COVER-COTTON/TERRY COTTON", price: 50, image: "assets/images/pillowcover.jpg" },
   { id: "h_9", name: "PILLOW COVER-EMBROIDERED", price: 100, image: "assets/images/pillowcover_emb.jpg" },
-  { id: "h_10", name: "BLANKET/QUILT COVER SINGLE", price: 200, image: "img/69.png" },
+  { id: "h_10", name: "BLANKET/QUILT COVER SINGLE", price: 200, image: "assets/images/59.jpg" },
   { id: "h_11", name: "FACE TOWEL", price: 30, image: "assets/images/81.jpg" },
   { id: "h_12", name: "SOFA COVER PER SET", price: 50, image: "assets/images/sofa.jpg" },
   { id: "h_13", name: "TABLE COVER SMALL", price: 50, image: "assets/images/79.jpg" },
   { id: "h_14", name: "TABLE COVER BIG", price: 100, image: "assets/images/78.jpg" },
-  { id: "h_15", name: "TABLE RUNNER", price: 80, image: "img/74.png" },
+  { id: "h_15", name: "TABLE RUNNER", price: 80, image: "assets/images/table-runner.png" },
   { id: "h_16", name: "PRAM", price: 300, image: "assets/images/77.jpg" },
   { id: "h_17", name: "SUITECASE / TROLLEY BAG LARGE", price: 300, image: "assets/images/suitcase.jpg" },
   { id: "h_18", name: "CURTAIN WINDOW WITHOUT LINING 3*5", price: 100, image: "assets/images/69.jpg" },
@@ -222,7 +222,7 @@
   { id: "h_22", name: "CURTAIN FALL CEILING WITH LINING 3*9", price: 400, image: "assets/images/75.jpg" },
   { id: "h_23", name: "CURTAIN STANDARD PANEL WITHOUT LINING", price: 200, image: "assets/images/72.jpg" },
   { id: "h_24", name: "CURTAIN STANDARD PANEL WITH LINING", price: 300, image: "assets/images/71.jpg" },
-  { id: "h_25", name: "BEDSHEET SINGLE", price: 50, image: "img/84.png" },
+  { id: "h_25", name: "BEDSHEET SINGLE", price: 50, image: "assets/images/67.jpg" },
   { id: "h_26", name: "BEDSHEET DOUBLE", price: 100, image: "assets/images/67.jpg" },
   { id: "h_27", name: "BLANKET SINGLE", price: 200, image: "assets/images/66.jpg" },
   { id: "h_28", name: "BLANKET DOUBLE", price: 400, image: "assets/images/blanket_double.jpg" },
@@ -577,7 +577,7 @@ async function submitOrderForm() {
             console.log('Total Amount:', calculateTotalAmount() );
             
         try {
-            const whatsappNumber = "918985363995";
+            const whatsappNumber = "91";
             const apiEndpoint = "https://live-mt-server.wati.io/324318/api/v1/sendTemplateMessage?whatsappNumber=" + whatsappNumber;
             
             const templateRequest = {
@@ -781,12 +781,10 @@ const phoneInput = document.getElementById('phone');
             <div class="container pt-md-5 pt-4">
                 <div class="w3l-footer-text-style">
                     <div class="footer-list-cont d-flex align-items-center justify-content-between mb-5">   
-                        <h6 class="foot-sub-title">Contact Us</h6>
+                        <h6 class="foot-sub-title" mb-0px>Contact Us</h6>
                         <div class="main-social-footer-29">
-                            <a href="#facebook" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#twitter" class="twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#instagram" class="instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="#linkedin" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/share/14qBsGgM7J/" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/bo_smartwash?igsh=cjJ6N2NyM3ppdXBv" class="instagram"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -812,10 +810,8 @@ const phoneInput = document.getElementById('phone');
                         <div class="address-grid">
                             <h5 class="mb-sm-4 mb-3 pb-lg-2 top-bold">Support Links</h5>
                             <ul>
-                                <li><a href="#privacy">Privacy Policy</a></li>
+                                <li><a href="privacypolicy.html">Privacy Policy</a></li>
                                 <li><a href="#terms"> Terms of Service</a></li>
-                                <li><a href="contact.php">Contact us</a></li>
-                                <li><a href="#support"> Support</a></li>
                             </ul>
                         </div>
                     </div>
@@ -828,8 +824,6 @@ const phoneInput = document.getElementById('phone');
                         
                     </div>
                 </div>
-                <!-- copyright -->
-                
             </div>
         </div>
     </footer>
