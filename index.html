@@ -575,29 +575,7 @@
             margin: 0;
             padding: 0;
         }
-        .whatsapp-block {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25D366;
-            color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            cursor: pointer;
-            z-index: 1000;
-        }
-        .whatsapp-block img {
-            width: 30px;
-            height: 30px;
-        }
-        .whatsapp-block:hover {
-            background-color: #1ebe5c;
-        }
+        
         
         .order-now-btn {
         background-color: #ffffff; /* White background */
@@ -630,17 +608,6 @@
 </head>
 <body>
 
-    <!-- WhatsApp Block -->
-    <div class="whatsapp-block" onclick="redirectToWhatsApp()">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
-    </div>
-
-    <script>
-        function redirectToWhatsApp() {
-            // Replace with your WhatsApp number in the format: whatsapp://send?phone=<number>&text=<message>
-            window.location.href = "whatsapp://send?phone=7997134445&text=Hello!%20I%20need%20assistance%20with%20your%20laundry%20services.";
-        }
-    </script>
-</body>
+  
 
 </html>
