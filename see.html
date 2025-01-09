@@ -717,6 +717,14 @@ const phoneInput = document.getElementById('phone');
     /* General header styles */
     header {
         background-color: #ffffff; /* Dark background color */
+
+
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+
+
+        font-family: var(--bs-font-sans-serif);
         color: #ffffff; /* White text */
         padding: 15px 0; /* Vertical padding */
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect */
@@ -750,8 +758,8 @@ const phoneInput = document.getElementById('phone');
     .nav-link {
         
         color: #ffffff; /* White text for the links */
-        font-size: 16px;
-        padding: 8px 16px;
+        font-size: 18px;
+        padding: 0px 16px;
     }
 
     .nav-link:hover {
@@ -806,7 +814,7 @@ const phoneInput = document.getElementById('phone');
         }
 
         .nav-link {
-            font-size: 14px; /* Reduce font size for mobile */
+            font-size: 16px; /* Reduce font size for mobile */
         }
     }
 
@@ -822,13 +830,15 @@ const phoneInput = document.getElementById('phone');
     }
  
     .nav-linkk {
-  display: block;
+
+
+        display: block;
   padding: 0.5rem 1rem;
   color: #0d6efd;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
-
+  
 .nav-itemm {
     padding: 0 11px;
 }
@@ -920,16 +930,17 @@ div {
 /* Navbar items (li) */
 .navbar-list .nav-item {
     margin-left: 6px;  /* Reduced spacing between navigation items to 6px */
-    font-weight: 400;  /* Reduced font weight to 300 (was 700) */
+    font-weight: 550;  /* Reduced font weight to 300 (was 700) */
 }
 
 /* Navbar link styling */
 .navbar-list .nav-item .nav-link {
     text-decoration: none;
     color: #333;  /* Default font color */
-    font-weight: 400;  /* Reduced font weight to 300 (was 700) */
+    width: 100%;
+    font-weight: 550;  /* Reduced font weight to 300 (was 700) */
     font-size: 16px;  /* Adjust font size */
-    padding: 5px 10px;  /* Padding around each nav link */
+    padding: 5px 9px;  /* Padding around each nav link */
     transition: color 0.3s ease;
 }
 
@@ -980,6 +991,15 @@ div {
 }
 
 
+.main-header .logo {
+    padding-left: 64px; /* Reduce space between logo and navbar items */
+}
+
+.navbar-links {
+    padding-right: 50px; ; /* Adjust padding of navbar if needed */
+}
+
+
 
 
 </style>
@@ -1021,6 +1041,10 @@ div {
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About Us</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="see.html">Order Now</a>
+                    </li>
+                    
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#" id="navbarScrollingDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
