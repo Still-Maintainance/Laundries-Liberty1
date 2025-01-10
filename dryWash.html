@@ -54,6 +54,7 @@
 
 <body>
     
+<<<<<<< HEAD
     <header id="site-header" class="fixed-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -113,6 +114,16 @@
             </nav>
         </div>
     </header>
+=======
+    <div id="header-placeholder"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
+>>>>>>> origin/master
     <!-- inner banner -->
     <section class="inner-banner py-5">
         <div class="w3l-breadcrumb py-lg-5">
