@@ -2,6 +2,46 @@
 <html lang="en">
 
 <head>
+    <style>.order-now {
+        display: flex;
+        align-items: flex-start; /* Aligns the button with the top of the content */
+        margin-top: 10px; /* Optional: Adjust spacing */
+    }
+    
+    .order-now button {
+        background-color: #007bff; /* Button background color */
+        color: white; /* Text color */
+        font-size: 1rem; /* Font size */
+        border: none; /* Removes default border */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .order-now button:hover {
+        background-color: #0056b3; /* Darker shade on hover */
+    }
+    .fixed-order-btn {
+        background-color: #007bff;
+    position: fixed; /* Keeps the button in a fixed position */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right side of the viewport */
+    padding: 12px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size for readability */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    cursor: pointer; /* Pointer cursor on hover */
+    z-index: 1000; /* Ensure it appears above other elements */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.fixed-order-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+    </style>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,6 +73,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#inpage">How it works</a>
                         </li>
                         
                         <li class="nav-item dropdown">
@@ -89,50 +132,63 @@
 <section class="w3l-blogpost-content py-5">
     <div class="container py-lg-5 py-md-4 py-2">
         <div class="row">
-            <div class="text-11 col-lg-8 mx-auto">
-                <div class="text11-content">
-                    
-                    <!-- ABOUT Dry Cleaning -->
-                    <h2 class="mt-5">What is Premium Laundry?
-                    </h2>
-                    <p>
-                        Premium laundry is a high-end cleaning service designed to provide meticulous care for your most valued garments. This service uses advanced washing techniques, gentle detergents, and specialized equipment to ensure your clothes are treated with the utmost delicacy. From luxurious fabrics to designer wear, premium laundry guarantees a safe and thorough cleaning process tailored to your needs.
-                    </p>
-
-                    <!-- BENEFITS of Dry Cleaning -->
-                    <h2 class="mt-5">Why Should You Choose Premium Laundry?</h2>
-                    <p>
-                        Premium laundry is the ideal choice for those who demand excellence in garment care. It ensures deep cleaning without compromising the quality, texture, or lifespan of your clothes. Special attention is given to removing tough stains, handling delicate fabrics, and maintaining vibrant colors. Additionally, premium laundry services offer personalized solutions for items that require extra care, such as high-end suits, silk dresses, or embroidered apparel.
-                    </p>
-
-                    <!-- PROCESS of Dry Cleaning -->
-                    <h2 class="mt-5">How Does Premium Laundry Work?</h2>
-                    <p>
-                        The process starts with a thorough inspection of your clothes to identify fabric type, stains, and cleaning requirements. Each item is pre-treated using fabric-specific solutions before undergoing a gentle wash in state-of-the-art machines. Afterward, garments are carefully dried, steamed, and pressed to perfection. The final step includes quality checks to ensure every piece is returned to you in impeccable condition, looking as good as new.
-                    </p>
-                    <div class="nav-links">
-                        <div class="nav-previous">
-                            <a href="#" rel="prev">
-                                <img src="assets/images/m1.jpg" alt="" class="img-fluid radius-image" />
-                                <div class="post-data align-self">
-                                    <span class="nav-arrow-label"><i
-                                            class="fas fa-arrow-left me-1"></i>Previous</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="nav-next text-end">
-                            <a href="dryWash.html" rel="next">
-                                <div class="post-data align-self">
-                                    <span class="nav-arrow-label">Next<i class="fas fa-arrow-right ms-1"></i></span>
-                                </div>
-                                <img src="assets/images/m3.jpg" alt="" class="img-fluid radius-image" />
-                            </a>
+            <div class="d-flex justify-content-center align-items-start gap-3">
+                <!-- Main Content -->
+                <div class="text-11 col-lg-8 mx-auto">
+                    <div class="text11-content">
+    
+                        <!-- ABOUT Premium Laundry -->
+                        <h2 class="mt-5">What is Premium Laundry?</h2>
+                        <p>
+                            Premium laundry is a high-end cleaning service designed to provide meticulous care for your most valued garments. This service uses advanced washing techniques, gentle detergents, and specialized equipment to ensure your clothes are treated with the utmost delicacy. From luxurious fabrics to designer wear, premium laundry guarantees a safe and thorough cleaning process tailored to your needs.
+                        </p>
+    
+    
+    
+                        <!-- BENEFITS of Premium Laundry -->
+                        <h2 class="mt-5">Why Should You Choose Premium Laundry?</h2>
+                        <p>
+                            Premium laundry is the ideal choice for those who demand excellence in garment care. It ensures deep cleaning without compromising the quality, texture, or lifespan of your clothes. Special attention is given to removing tough stains, handling delicate fabrics, and maintaining vibrant colors. Additionally, premium laundry services offer personalized solutions for items that require extra care, such as high-end suits, silk dresses, or embroidered apparel.
+                        </p>
+                        <!-- PROCESS of Premium Laundry -->
+                        <h2 class="mt-5">How Does Premium Laundry Work?</h2>
+                        <p>
+                            The process starts with a thorough inspection of your clothes to identify fabric type, stains, and cleaning requirements. Each item is pre-treated using fabric-specific solutions before undergoing a gentle wash in state-of-the-art machines. Afterward, garments are carefully dried, steamed, and pressed to perfection. The final step includes quality checks to ensure every piece is returned to you in impeccable condition, looking as good as new.
+                        </p>
+    
+                        <div class="nav-links">
+                            <div class="nav-previous">
+                                <a href="#" rel="prev">
+                                    <img src="assets/images/m1.jpg" alt="" class="img-fluid radius-image" />
+                                    <div class="post-data align-self">
+                                        <span class="nav-arrow-label"><i class="fas fa-arrow-left me-1"></i>Previous</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nav-next text-end">
+                                <a href="dryWash.html" rel="next">
+                                    <div class="post-data align-self">
+                                        <span class="nav-arrow-label">Next<i class="fas fa-arrow-right ms-1"></i></span>
+                                    </div>
+                                    <img src="assets/images/m3.jpg" alt="" class="img-fluid radius-image" />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+    
+                <!-- Order Now Button -->
+               <!-- Button -->
+               <button 
+               class="fixed-order-btn bg-blue-600 text-white" 
+               onclick="window.location.href='see.html'">
+               Order Now
+           </button>
+
             </div>
         </div>
     </div>
+    
 </section>
 <!-- //blog single -->
 
@@ -220,6 +276,7 @@
                 $('body').toggleClass('noscroll');
             })
         });
+        
     </script>
     <!-- //disable body scroll which navbar is in active -->
 

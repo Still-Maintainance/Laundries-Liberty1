@@ -17,6 +17,37 @@
         rel="stylesheet">
     <!-- Template CSS Style link -->
     <link rel="stylesheet" href="assets/css/style-liberty.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .whatsapp-block {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            z-index: 1000;
+        }
+        .whatsapp-block img {
+            width: 30px;
+            height: 30px;
+        }
+        .whatsapp-block:hover {
+            background-color: #1ebe5c;
+        }
+    </style>
+
 </head>
 <body>
     
@@ -283,29 +314,34 @@
     
     <!-- CSS -->
     <style>
-        .carousel-wrapper {
-            margin: 50px 0;
-        }
-    
-        .transparent-frame {
-            background: rgba(255, 255, 255, 0.6);
-            border: 2px solid rgba(0, 0, 0, 0.1);
-            border-radius: 15px;
-            padding: 25px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s;
-        }
-    
-    
-        .carousel img {
-            border-radius: 10px;
-        }
-    
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            background-color: rgba(0, 0, 0, 0.6); /* Make controls more visible */
-            border-radius: 50%;
-        }
+       .carousel-wrapper {
+    margin: 50px 0;
+}
+
+.transparent-frame {
+    background: #0066b3; /* Blue background */
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    color: #FFFFFF !important; /* White text color */
+}
+
+.transparent-frame * {
+    color: #FFFFFF !important; /* Apply to all child elements */
+}
+
+.carousel img {
+    border-radius: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.6); /* Visible controls */
+    border-radius: 50%;
+}
+
     </style>
     
     <!-- Bootstrap JS -->
